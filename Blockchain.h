@@ -43,6 +43,7 @@ struct Block
 
 	string mine()
 	{
+		nonce = 0;
 		while (blockHash.find(dificult(4), 0) != 0)
 		{
 			nonce++;
